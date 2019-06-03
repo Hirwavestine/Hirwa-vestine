@@ -17,7 +17,8 @@ class Contact extends Component {
   send = e => {
     e.preventDefault();
     const { subject, body } = this.state;
-    var link = "mailto:oesukam@gmail.com?subject=" + subject + "&body=" + body;
+    var link =
+      "mailto:gilhirwa22@gmail.com?subject=" + subject + "&body=" + body;
     window.location.href = link;
   };
 

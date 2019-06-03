@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./resume.css";
+import "./Resume.css";
 
 class Resume extends Component {
   state = {
@@ -7,7 +7,7 @@ class Resume extends Component {
   };
 
   componentDidMount() {
-    fetch("https://api.github.com/users/oesukam")
+    fetch("https://api.github.com/users/Hirwavestine")
       .then(res => res.json())
       .then(res => {
         this.setState({
@@ -30,15 +30,15 @@ class Resume extends Component {
               <ul>
                 <li>
                   <span className="has-text-weight-bold">First Name: </span>
-                  Olivier
+                  Vestine
                 </li>
                 <li>
                   <span className="has-text-weight-bold">Last Name: </span>
-                  Esuka
+                  Hirwa
                 </li>
                 <li>
                   <span className="has-text-weight-bold">Email: </span>
-                  oesukam@gmail.com
+                  gilhirwa22@gmail.com
                 </li>
               </ul>
 

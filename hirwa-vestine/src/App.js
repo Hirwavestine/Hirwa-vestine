@@ -4,17 +4,21 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import NotFound from "./components/NotFound/NotFound";
-import Home from "./pages/home";
-import Resume from "./pages/resume";
+import Navbar from "./components/NavBar/NavBar";
+import Home from "./pages/Home/Home";
+import Resume from "./pages/Resume/Resume";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
     <div className="app">
       <HashRouter basename="/">
+        <Navbar />
         <Switch>
-          <Route path="/" component={Home} />
+          <Route path="/" exact component={Home} />
+          <Route path="/resume" exact component={Resume} />
+          <Route path="/contact" exact component={Contact} />
           <Route path="*" component={NotFound} />
-          <Route exact path="/resume" component={Resume} />
         </Switch>
       </HashRouter>
     </div>
